@@ -1,4 +1,4 @@
-package jpabasic;
+package jpabasic.jpa;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -14,14 +14,14 @@ public class JpaMain {
         EntityTransaction tx = em.getTransaction();
         tx.begin();
 
-        Member member = new Member();
-        member.setId(1L);
-        member.setName("memberA");
-        em.persist(member);
+        try {
+            tx.commit();
+        } catch (Exception e) {
+            tx.rollback();
+        } finally {
+            em.close();
+        }
 
-        tx.commit();
-
-        em.close();
         emf.close();
     }
 
