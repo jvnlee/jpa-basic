@@ -12,7 +12,7 @@ public class Category extends BaseEntity {
 
     private String name;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "UPPER_CATEGORY_ID")
     private Category upperCategory;
 
