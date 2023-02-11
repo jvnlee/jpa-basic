@@ -13,3 +13,5 @@
 [고급 매핑](./lecture-note/5_고급_매핑.md)
 
 [프록시와 연관 관계 관리](./lecture-note/6_프록시와_연관_관계_관리.md)
+
+[값 타입](./lecture-note/7_값_타입.md)
