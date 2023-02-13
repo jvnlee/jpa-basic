@@ -15,3 +15,5 @@
 [프록시와 연관 관계 관리](./lecture-note/6_프록시와_연관_관계_관리.md)
 
 [값 타입](./lecture-note/7_값_타입.md)
+
+[JPQL 기본 문법](./lecture-note/8_JPQL_기본_문법.md)
