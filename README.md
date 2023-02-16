@@ -17,3 +17,5 @@
 [값 타입](./lecture-note/7_값_타입.md)
 
 [JPQL 기본 문법](./lecture-note/8_JPQL_기본_문법.md)
+
+[JPQL 중급 문법](./lecture-note/9_JPQL_중급_문법.md)
