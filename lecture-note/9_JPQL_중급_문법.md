@@ -464,9 +464,10 @@ tx.commit();
 
 > (참고) 내부적으로 자동 flush가 되는 타이밍
 > 
->- 트랜잭션 커밋 시
->- 쿼리 실행 직전 (`executeQuery()`, `executeUpdate()`)
->- `flush()` 직접 호출 시
+>1. 트랜잭션 커밋 시
+>2. 쿼리 실행 직전
+>   > `createQuery()`, `createNamedQuery()`, `createNativeQuery()`, 외에도 Criteria와 QueryDSL을 통한 쿼리 실행도 포함
+>3. `flush()` 직접 호출 시
 
 &nbsp;
 
